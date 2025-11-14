@@ -6,6 +6,7 @@ on:
 
 env:
   GOPATH: ${{ github.workspace }}/go
+  TMPDIR: /mnt
 
 permissions:
   contents: read
