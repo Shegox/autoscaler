@@ -6,7 +6,6 @@ on:
 
 env:
   GOPATH: ${{ github.workspace }}/go
-  TMPDIR: /mnt
 
 permissions:
   contents: read
@@ -59,3 +58,5 @@ jobs:
         run: hack/for-go-proj.sh test
         env:
           GO111MODULE: auto
+          TMPDIR: /mnt
+
